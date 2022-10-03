@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appphonestore</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+    <div class="row">
+        <div class="col-lg-4 col-md-5 col-sm-12 bg-secondary">
+            <%= link_to "Home", root_path, class: 'fs-3 fw-bold text-white' %>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum molestiae sapiente est ea ratione aliquam iusto necessitatibus dolores error.
+        </div>
+        <div class="col-lg-8 col-md-7 col-sm-12 bg-light">
+            <%= yield %>
+        </div>
+    </div>
+  </body>
+</html>
